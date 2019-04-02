@@ -3,6 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: podinfo
+  namespace: demo
 data:
   foo: bar
   baz: lol

@@ -48,6 +48,11 @@ spec:
         env:
         - name: PODINFO_UI_COLOR
           value: green
+        - name: FOO
+          valueFrom:
+            configMapKeyRef:
+              name: podinfo
+              key: foo
         livenessProbe:
           httpGet:
             path: /healthz
